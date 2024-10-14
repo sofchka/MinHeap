@@ -20,8 +20,6 @@ typedef struct _MinHeap
 void unitHeap(MinHeap **h, int cap);
 void myPush(MinHeap *h, int FillNum);
 void print(MinHeap *a);
-int getmin(MinHeap *a);
-int getmax(MinHeap *a);
 void myPop(MinHeap *h);
 void myRemove(MinHeap *h, int i);
 
