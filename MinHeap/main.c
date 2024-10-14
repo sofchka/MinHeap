@@ -16,9 +16,11 @@ int main()
 		{
 			printf("Min Heap elements:\n");
 			print(a);
+
 			printf("After Poping the first element:\n");
 			myPop(a);
 			print(a);
+
 			int index;
 			printf("Put index to remove: ");
 			scanf("%d", &index);
