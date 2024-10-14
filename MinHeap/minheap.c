@@ -1,5 +1,34 @@
 #include "minheap.h"
 
+//min num in min heap
+int getmin(MinHeap *a)
+{
+	if (a->size == 0)
+	{
+		printf("Heap is empty.\n");
+		return (-1);
+	}
+	return (a->array[0]);
+}
+
+//max num in min heap
+int getmax(MinHeap *a)
+{
+	if (a->size == 0)
+	{
+		printf("Heap is empty.\n");
+		return -1;
+	}
+	int start = a->size / 2;
+	int max = a->array[start];
+	for (int i = start + 1; i < a->size; ++i)
+	{
+		if (a->array[i] > max)
+			max = a->array[i];
+	}
+	return (max);
+}
+
 //the empty array with malloc
 void unitHeap(MinHeap **h, int cap)
 {
@@ -153,33 +182,6 @@ void print(MinHeap *a)
 			printBranch(elements, max, spaces, inner);
 		}
 	}
-}
-
-//min num in min heap
-int getmin(MinHeap *a)
-{
-	if (a->size == 0)
-	{
-		printf("Heap is empty.\n");
-		return (-1);
-	}
-	return (a->array[0]);
-}
-
-//max num in min heap
-int getmax(MinHeap *a)
-{
-	if (a->size == 0)
-	{
-		printf("Heap is empty.\n");
-		return -1;
-	}
-	int start = a->size / 2;
-	int max = a->array[start];
-	for (int i = start + 1; i < a->size; ++i)
-	{
-		if (a->array[i] > max)
-			max = a->array[i];
-	}
-	return (max);
+ printf("Minimum element is: %d\n", getmin(a));
+			printf("Maximum element is: %d\n", getmax(a));
 }
