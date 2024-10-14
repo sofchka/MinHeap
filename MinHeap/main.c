@@ -16,21 +16,15 @@ int main()
 		{
 			printf("Min Heap elements:\n");
 			print(a);
-			printf("\nMinimum element is: %d\n", getmin(a));
-			printf("Maximum element is: %d\n", getmax(a));
 			printf("After Poping the first element:\n");
 			myPop(a);
 			print(a);
-			printf("\nMinimum element is: %d\n", getmin(a));
-			printf("Maximum element is: %d\n", getmax(a));
 			int index;
 			printf("Put index to remove: ");
 			scanf("%d", &index);
 			printf("After Removeing the [%d] element:\n", index);
 			myRemove(a, index);
 			print(a);
-			printf("Minimum element is: %d\n", getmin(a));
-			printf("Maximum element is: %d\n", getmax(a));
 		}
 		else
 			printf("The min heap is empty.\n");
