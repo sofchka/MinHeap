@@ -1,3 +1,5 @@
+```
+
 **OUTPUT EXAMPLE
 
 Min Heap elements:
@@ -8,7 +10,8 @@ Min Heap elements:
 66  94  47  64
 Minimum element is: 0
 Maximum element is: 94
-After Poping the first element:
+
+After Popping the first element:
       44
      /  \            
   53      47
@@ -16,8 +19,10 @@ After Poping the first element:
 66  94  64    
 Minimum element is: 44
 Maximum element is: 94
+
 Put index to remove: 1
-After Removeing the [1] element:
+
+After Removing the [1] element:
       44
      /  \            
   64      47
@@ -25,3 +30,4 @@ After Removeing the [1] element:
 66  94        
 Minimum element is: 44
 Maximum element is: 94
+```
