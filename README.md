@@ -1,7 +1,32 @@
+# MinHeap Implementation in C
+
+## Overview
+This project implements a **Min Heap** data structure in C, supporting basic heap operations such as inserting, deleting, and retrieving the minimum and maximum elements. It also includes a visualization feature for printing the heap structure.
+
+## Features
+- **Retrieve minimum element** (`getmin`)  
+- **Retrieve maximum element** (`getmax`)  
+- **Initialize an empty heap** (`unitHeap`)  
+- **Insert a new element** (`myPush`)  
+- **Remove a specific element** (`myRemove`)  
+- **Remove the root element** (`myPop`)  
+- **Print the heap as a tree structure** (`print`)
+
+## Usage
+### Compilation
+To compile the program, use:
+```sh
+gcc minheap.c -o minheap -lm
 ```
 
-**OUTPUT EXAMPLE
+### Running the program
+Execute the compiled program:
+```sh
+./minheap
+```
 
+### Example Output
+```
 Min Heap elements:
        0
      /  \            
