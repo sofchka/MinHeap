@@ -12,19 +12,6 @@ This project implements a **Min Heap** data structure in C, supporting basic hea
 - **Remove the root element** (`myPop`)  
 - **Print the heap as a tree structure** (`print`)
 
-## Usage
-### Compilation
-To compile the program, use:
-```sh
-gcc minheap.c -o minheap -lm
-```
-
-### Running the program
-Execute the compiled program:
-```sh
-./minheap
-```
-
 ### Example Output
 ```
 Min Heap elements:
